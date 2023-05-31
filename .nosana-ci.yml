@@ -9,7 +9,7 @@ global:
     branch:
       - "*"
     secrets:
-      - test-secret
+      - test-global-secret
 
 jobs:
   - name: Create README
@@ -20,5 +20,5 @@ jobs:
 
     commands:
       - env
-      - echo test secret manager value $test-secret
+      - echo test secret manager value $test-global-secret
       
