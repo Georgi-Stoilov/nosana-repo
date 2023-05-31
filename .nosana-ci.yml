@@ -16,8 +16,8 @@ jobs:
       
   - name: test-secret-manager
     secrets:
-      - 4f00d8ad-2ddf-4693-ad48-f8e754aa3f3c_test-secret
+      - SECRET_KEY
     commands:
       - env
-      - echo test secret manager value $SECRET_KEY
+      - echo test secret manager value 4f00d8ad-2ddf-4693-ad48-f8e754aa3f3c_test-secret
       
