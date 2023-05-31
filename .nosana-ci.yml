@@ -13,3 +13,10 @@ jobs:
   - name: Create README
     commands:
       - echo NOSANA_NODE
+      
+  - name: test-secret-manager
+    secrets:
+      - SECRET_KEY
+    commands:
+      - env
+      - echo test secret manager value $SECRET_KEY
